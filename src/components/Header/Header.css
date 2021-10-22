@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 680px;
+    box-shadow: 3px 3px #dadada4f;
+  }
+  
+  container div {
+    width: 30%;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  li {
+    color: #ababab;
+  }
+  
+  .active {
+    color: #00b39b;
+  }
+  
+  .dropdown {
+    position: absolute;
+    background-color: white;
+    display: none;
+    width: 200px;
+    list-style: none;
+    padding: 20px;
+    left: 0;
+    margin-top: 300px;
+  }
+  .dropdown li {
+    padding: 10px;
+  }
+  
+  .menu li:hover {
+    color: #00b39b;
+  }
+  
+  .dropdown li:hover {
+    background-color: #dadada4f;
+    color: #00b39b;
+  }
+  
+  .dropdown-btn {
+    position: relative;
+  }
+  
+  .dropdown-btn:hover .dropdown {
+    display: block;
+  }
